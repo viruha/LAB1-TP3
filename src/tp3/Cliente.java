@@ -13,8 +13,12 @@ public class Cliente {
     private String direccion;
 
     public Cliente(String dni, String nombre, String apellido, String ciudad, String direccion) {
+        this.dni = dni;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.ciudad = ciudad;
+        this.direccion = direccion;
     }
-
     public String getDni() {
         return dni;
     }
