@@ -11,7 +11,7 @@ public class TP3 {
     //Test de metodos//
     //Testeo de creacion de Directorio y agregando Clientes al mismo    
     Directorio guia=new Directorio();
-    Cliente C1=new Cliente("35315399", "Gerardo", "Garro", "San Luis", "Lucas Rodriguez");
+    Cliente C1=new Cliente("14144735", "Gerardo", "Garro", "San Luis", "Lucas Rodriguez");
     Cliente C2=new Cliente("14144735", "Zoe", "Acevedo", "San Luis", "Pasaje Fortuna");
     Cliente C3=new Cliente("4076512", "Ana", "Sosa", "Buenos Aires", "Palermo");
     Cliente C4=new Cliente("7376377", "Rolando", "Garro", "Cordoba", "Recoleta");
@@ -42,7 +42,7 @@ public class TP3 {
     //en la cual me devuelve una lista con los clientes de una ciudad determinada 
     System.out.println("Lista de Clientes de la misma ciudad");
     Set <Cliente> nuevo;
-    nuevo=guia.buscarClientes("Cordoba");
+    nuevo=guia.buscarClientes("San Luis");
         for (Iterator<Cliente> iterator = nuevo.iterator(); iterator.hasNext();) {
             while(iterator.hasNext()){
                 System.out.println(iterator.next());    

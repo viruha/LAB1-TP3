@@ -17,12 +17,6 @@ public class Directorio {
 
     public Cliente buscarCliente(String telefono) {
         return directorio.get(telefono);
-        /*for (Map.Entry<String, Cliente> entry : directorio.entrySet()) {
-            if (telefono.equalsIgnoreCase(entry.getKey())) {
-                return entry.getValue();
-            }
-        }*/
-        //return null;
     }
    
     public ArrayList<String> buscarTelefono(String apellido) {
@@ -39,7 +33,6 @@ public class Directorio {
    public Set<Cliente> buscarClientes(String ciudad) {
         HashSet <Cliente> cli=new HashSet();
         for (Map.Entry<String, Cliente> entry : directorio.entrySet()) {
-                
                if(entry.getValue().getCiudad().equalsIgnoreCase(ciudad)){
                cli.add(entry.getValue());
                } 
