@@ -12,6 +12,9 @@ public class Cliente {
 
     private String direccion;
 
+    public Cliente() {
+    }
+
     public Cliente(String dni, String nombre, String apellido, String ciudad, String direccion) {
         this.dni = dni;
         this.nombre = nombre;
@@ -57,6 +60,11 @@ public class Cliente {
 
     public void setDireccion(String direccion) {
         this.direccion = direccion;
+    }
+
+    @Override
+    public String toString() {
+        return "Cliente{" + "dni=" + dni + ", nombre=" + nombre + ", apellido=" + apellido + ", ciudad=" + ciudad + ", direccion=" + direccion + '}';
     }
 
     

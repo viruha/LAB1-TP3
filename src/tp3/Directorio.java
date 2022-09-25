@@ -2,7 +2,10 @@ package tp3;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
+
 
 public class Directorio {
 
@@ -21,7 +24,7 @@ public class Directorio {
         }
         return null;
     }
-
+   
     public ArrayList<String> buscarTelefono(String apellido) {
         ArrayList<String> telefonosMismoApellido = new ArrayList<>();
        for (Map.Entry<String, Cliente> entry : directorio.entrySet()) {
@@ -32,12 +35,24 @@ public class Directorio {
         return telefonosMismoApellido;
     }
 
-    public Set<Cliente> buscarClientes(String ciudad) {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-
+   public Set<Cliente> buscarClientes(String ciudad) {
+        HashSet <Cliente> cli=new HashSet();
+        for (Map.Entry<String, Cliente> entry : directorio.entrySet()) {
+                
+               if(entry.getValue().getCiudad().equalsIgnoreCase(ciudad)){
+               cli.add(entry.getValue());
+               } 
+           
+       }
+              
+    return cli;}
+   
     public boolean borrarCliente(String telefono) {
         return directorio.remove(telefono) == null;
         
+    }
+
+    public HashMap<String, Cliente> getDirectorio() {
+        return directorio;
     }
 }
