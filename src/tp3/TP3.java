@@ -1,16 +1,14 @@
 package tp3;
 
-/*import java.util.ArrayList;
-import java.util.HashSet;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Map;
-import java.util.Set;*/
+import java.util.Set;
 
 public class TP3 {
 
- 
-    public static void main(String[] args) {
-    /*//Test de metodos//
+ public static void main(String[] args) {
+    //Test de metodos//
     //Testeo de creacion de Directorio y agregando Clientes al mismo    
     Directorio guia=new Directorio();
     Cliente C1=new Cliente("35315399", "Gerardo", "Garro", "San Luis", "Lucas Rodriguez");
@@ -56,7 +54,7 @@ public class TP3 {
     //testeo de la clase Directorio para borrar un Map por su Key(String numero)
     guia.borrarCliente("2665800147");
     System.out.println("Directorio nuevo con un elemento eliminado del original:");
-    MostrarDir(guia);*/
+    MostrarDir(guia);
             
    
  
