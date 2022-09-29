@@ -32,6 +32,22 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuClienteBuscarActionPerformed"/>
               </Events>
             </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="MenuClientesProCiudad">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Buscar Clientes por Ciudad"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuClientesProCiudadActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="MenuBusquedaTelefonos">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Buscar Telefonos con mismo apellido"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuBusquedaTelefonosActionPerformed"/>
+              </Events>
+            </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="MenuClienteBorrar">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Borrar"/>

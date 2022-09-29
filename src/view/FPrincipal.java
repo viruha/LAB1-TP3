@@ -19,6 +19,8 @@ public class FPrincipal extends javax.swing.JFrame {
         MenuCliente = new javax.swing.JMenu();
         MenuClienteAgregar = new javax.swing.JMenuItem();
         MenuClienteBuscar = new javax.swing.JMenuItem();
+        MenuClientesProCiudad = new javax.swing.JMenuItem();
+        MenuBusquedaTelefonos = new javax.swing.JMenuItem();
         MenuClienteBorrar = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -48,6 +50,22 @@ public class FPrincipal extends javax.swing.JFrame {
             }
         });
         MenuCliente.add(MenuClienteBuscar);
+
+        MenuClientesProCiudad.setText("Buscar Clientes por Ciudad");
+        MenuClientesProCiudad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuClientesProCiudadActionPerformed(evt);
+            }
+        });
+        MenuCliente.add(MenuClientesProCiudad);
+
+        MenuBusquedaTelefonos.setText("Buscar Telefonos con mismo apellido");
+        MenuBusquedaTelefonos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuBusquedaTelefonosActionPerformed(evt);
+            }
+        });
+        MenuCliente.add(MenuBusquedaTelefonos);
 
         MenuClienteBorrar.setText("Borrar");
         MenuClienteBorrar.addActionListener(new java.awt.event.ActionListener() {
@@ -105,6 +123,20 @@ public class FPrincipal extends javax.swing.JFrame {
         desktopPane.moveToFront(frm_ClienteBorrar);
     }//GEN-LAST:event_MenuClienteBorrarActionPerformed
 
+    private void MenuClientesProCiudadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuClientesProCiudadActionPerformed
+                ClientesBusqueda frm_ClientesBusqueda = new ClientesBusqueda();
+        frm_ClientesBusqueda.setVisible(true);
+        desktopPane.add(frm_ClientesBusqueda);
+        desktopPane.moveToFront(frm_ClientesBusqueda);
+    }//GEN-LAST:event_MenuClientesProCiudadActionPerformed
+
+    private void MenuBusquedaTelefonosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuBusquedaTelefonosActionPerformed
+                 TelefonosBusqueda frm_TelefonosBusqueda = new TelefonosBusqueda();
+        frm_TelefonosBusqueda.setVisible(true);
+        desktopPane.add(frm_TelefonosBusqueda);
+        desktopPane.moveToFront(frm_TelefonosBusqueda);
+    }//GEN-LAST:event_MenuBusquedaTelefonosActionPerformed
+
 
     public static void main(String args[]) {
 
@@ -135,10 +167,12 @@ public class FPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem MenuBusquedaTelefonos;
     private javax.swing.JMenu MenuCliente;
     private javax.swing.JMenuItem MenuClienteAgregar;
     private javax.swing.JMenuItem MenuClienteBorrar;
     private javax.swing.JMenuItem MenuClienteBuscar;
+    private javax.swing.JMenuItem MenuClientesProCiudad;
     private javax.swing.JDesktopPane desktopPane;
     private javax.swing.JMenuBar jMenuBar1;
     // End of variables declaration//GEN-END:variables
