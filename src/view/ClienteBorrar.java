@@ -94,12 +94,12 @@ public class ClienteBorrar extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_BTN_SalirActionPerformed
 
     private void BTN_BorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTN_BorrarActionPerformed
-        if (!FPrincipal.guia.borrarCliente(EDT_Telefono.getText())){
+        if (!FPrincipal.getGuia().borrarCliente(EDT_Telefono.getText())){
             JOptionPane.showMessageDialog(null,"Cliente Borrado");
         } else {
             JOptionPane.showMessageDialog(null,"El cliente no existe");
         }
-        System.out.println(FPrincipal.guia.toString());
+        System.out.println(FPrincipal.getGuia().toString());
     }//GEN-LAST:event_BTN_BorrarActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

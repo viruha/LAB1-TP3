@@ -4,10 +4,14 @@ import tp3.Directorio;
 
 public class FPrincipal extends javax.swing.JFrame {
 
-    public static final Directorio guia = new Directorio();
+    private static Directorio guia = new Directorio();
 
     public FPrincipal() {
         initComponents();
+    }
+
+    public static Directorio getGuia() {
+        return guia;
     }
 
     @SuppressWarnings("unchecked")

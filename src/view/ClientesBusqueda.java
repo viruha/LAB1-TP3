@@ -109,7 +109,7 @@ public class ClientesBusqueda extends javax.swing.JInternalFrame {
 
     private void BTN_BuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTN_BuscarActionPerformed
         Set <Cliente> clientes;
-        clientes = FPrincipal.guia.buscarClientes(EDT_Ciudad.getText());
+        clientes = FPrincipal.getGuia().buscarClientes(EDT_Ciudad.getText());
         TA_Clientes.setText("Lista de Clientes de la misma ciudad \n");
         if (clientes.size() > 0) {
                     for (Cliente cliente : clientes) {

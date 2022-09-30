@@ -170,7 +170,7 @@ public class ClienteAlta extends javax.swing.JInternalFrame {
     private void BTN_GuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTN_GuardarActionPerformed
 
         Cliente cl = new Cliente(EDT_Dni.getText(), EDT_Nombre.getText(), EDT_Apellido.getText(), EDT_Ciudad.getText(), "sin dirección");
-        FPrincipal.guia.agregarCliente(EDT_Telefono.getText(), cl);
+        FPrincipal.getGuia().agregarCliente(EDT_Telefono.getText(), cl);
     }//GEN-LAST:event_BTN_GuardarActionPerformed
 
 

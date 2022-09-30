@@ -148,7 +148,7 @@ public class ClienteBusqueda extends javax.swing.JInternalFrame {
 
     private void BTN_BuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTN_BuscarActionPerformed
 
-        Cliente cl = FPrincipal.guia.buscarCliente(EDT_Telefono.getText());
+        Cliente cl = FPrincipal.getGuia().buscarCliente(EDT_Telefono.getText());
         EDT_Apellido.setText(cl.getApellido());
         EDT_Ciudad.setText(cl.getCiudad());
         EDT_Dni.setText(cl.getDni());

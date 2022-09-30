@@ -110,7 +110,7 @@ public class TelefonosBusqueda extends javax.swing.JInternalFrame {
 
     private void BTN_BuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTN_BuscarActionPerformed
         ArrayList <String> telefonos;
-        telefonos = FPrincipal.guia.buscarTelefono(EDT_Apellido.getText());
+        telefonos = FPrincipal.getGuia().buscarTelefono(EDT_Apellido.getText());
         TA_Clientes.setText("Lista de telefonos con el mismo apellido \n");
         if (telefonos.size() > 0) {
             for (String telefono : telefonos) {
